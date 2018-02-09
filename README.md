@@ -1,6 +1,6 @@
 # Crystals Collector
 
-Click [here] (https://melissarburnham.github.io/Crystals-Collector/.) for live version of this game. 
+Click [here](https://melissarburnham.github.io/Crystals-Collector/) for live version of this game. 
 
 ## Description
 
