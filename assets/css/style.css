@@ -1,8 +1,55 @@
+
+
+.container {
+    text-align: center;
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+
 h1 {
     background-color: aquamarine;
+    font-size: 60px;
+    background: rgba(226, 228, 223, 0.247);
+}
+
+#instructionsTitle {
+    font-size:30px;
 }
 
 .crystal-image{
     width: 100px;
     height: 100px;
+    justify-content: center;
+}
+
+#crystals{
+    text-align: center;
+}
+
+#instructions{
+    font-size: 20px;
+}
+
+.playWords {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#userScore{
+    margin-bottom: 100px;
+}
+
+@keyframes animatedBackground {
+	from { background-position: bottom; }
+	to { background-position: 100% bottom; }
+}
+
+body {  
+	background-image: url("../images/background.jpg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-attachment: fixed;
+	
+
+	animation: animatedBackground 40s linear infinite;
 }

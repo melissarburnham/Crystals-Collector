@@ -1,9 +1,11 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- google fonts link -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
     <!--Bootstrap link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Link to the jQuery Library -->
@@ -12,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!--css link-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
     <title>Crystals Collector</title>
 </head>
 <body>
@@ -22,23 +25,24 @@
             </div>
         </div>
         <!-- instructions div -->
-        <div class= "text-center" class="row">
+        <div class="row bodyWords">
             <div lass="col-sm-12 col-md-12 col-lg-12">
-                <p>Instructions 
-                    <br><hr>
-                You will be given a random number at the start of the game. <br>
+                <p id = "instructionsTitle">Instructions</p> 
+                    <hr>
+                <p id = "instructions">You will be given a random number at the start of the game. <br>
                 There are four crystals below. By clicking on a crystal, you will add a specific
                 amount of points to your total score. <br>
                 You win the game by matching the total score to the winning number. You lose the game if your total
                 score goes above the number. <br>
                 The value of each crystal is hidden from you until you click on it. <br>
                 When the game restarts, the value of the crystals are different. 
+                <br><hr>
                 </p>
             </div>
         </div>
 
         <!-- Target number and wins/losses div -->
-        <div class="row">
+        <div class="row playWords">
             <div class="col-sm-12 col-md-6 col-lg-6">
                 <p>Match this number: <span id="targetNumber"></span> </p>
             </div>
@@ -48,37 +52,20 @@
                 <p>Losses: <span id="losses"></span> </p>
             </div>
         </div>
+        <br>
+        <br>
 
-        <!-- Crystals div -->
-        <!-- <div class="row text-center">
-            <div class="col-sm-6 col-md-3 col-lg-3">
-                <img id="crystalOne" class="crystals" src="assets/images/crystalOne.jpg" alt="crystalOne" width="100" height="100">
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3">
-                 <img id="crystalTwo" class="crystals"  src="assets/images/crystalTwo.jpg" alt="crystalTwo" width="100" height="100">
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3">
-                 <img id="crystalThree" class="crystals" src="assets/images/crystalThree.jpg" alt="crystalThree" width="100" height="100">
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3">
-                <img id="crystalFour" class="crystals" src="assets/images/crystalFour.jpg" alt="crystalFour" width="100" height="100">
-            </div>
-        </div> -->
-
-        <div id="crystals">
-            </div>
+        <div id="crystals"></div>
+            <br>
+            <br>
 
         <!-- total score div -->
-        <div class="row text-center">
+        <div class="row playWords">
             <div class="col-sm-12 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
                 <p>Your total score is: </p>
                 <span id="userScore"></span>
             </div>
         </div>
-
-
-
-
     </div>
 
     <script src="assets/javascript/game.js"></script>
