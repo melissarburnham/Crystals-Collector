@@ -9,6 +9,7 @@
 h1 {
     font-size: 60px;
     background: rgba(183, 196, 220, 0.637);
+    border: black solid 1px;
 }
 
 #instructionsTitle {
