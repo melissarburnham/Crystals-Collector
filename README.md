@@ -4,7 +4,7 @@ Click [here](https://melissarburnham.github.io/Crystals-Collector/) for live ver
 
 ## Description
 
-* Use of JQUERY, Javacript, CSS, and HTML
+* Use of Javacript, JQUERY, CSS, and HTML
 
 ## Game Rules
 
